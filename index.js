@@ -29,6 +29,6 @@ app.use("/Authentication", authRouter);
 app.use("/payment", paymentRouter);
 app.use("/order", orderRouter);
 
-app.listen(process.env.PORT || 8000, () =>
+app.listen(process.env.PORT || 5000, () =>
   console.log(`server running in http://localhost:${process.env.PORT}`)
 );
