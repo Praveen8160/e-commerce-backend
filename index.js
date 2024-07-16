@@ -5,7 +5,7 @@ const cors = require("cors");
 const cookieParser = require("cookie-parser");
 app.use(
   cors({
-    origin: "https://e-commerce-frontend-l7j1.onrender.com/",
+    origin: "https://e-commerce-frontend-l7j1.onrender.com",
     credentials: true, // If you are sending cookies or authorization headers
     optionsSuccessStatus: 200,
   })
