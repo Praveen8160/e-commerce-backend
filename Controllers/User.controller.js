@@ -30,8 +30,8 @@ const userLoginhandler = async (req, res) => {
       // console.log(usertoken)
       res.cookie("token", usertoken, {
         httpOnly: true,
-        secure: process.env.NODE_ENV === "production",
-        sameSite: process.env.NODE_ENV === "production" ? "None" : "Lax",
+        secure: true, // Use secure cookies in production
+        sameSite: "None",
       });
       return res.json({ success: true });
     } else {
